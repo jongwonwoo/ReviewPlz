@@ -1,0 +1,6 @@
+framework module ReviewPlz {
+  umbrella header "ReviewPlz-umbrella.h"
+
+  export *
+  module * { export * }
+}

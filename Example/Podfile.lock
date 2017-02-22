@@ -1,0 +1,16 @@
+PODS:
+  - ReviewPlz (0.1.0)
+
+DEPENDENCIES:
+  - ReviewPlz (from `../`)
+
+EXTERNAL SOURCES:
+  ReviewPlz:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ReviewPlz: 39a8c3ad37eb8ab145ce6c7d262435dc7afaaff3
+
+PODFILE CHECKSUM: 98df02b3366e77e1e8f1f2f41baf1334ddb548eb
+
+COCOAPODS: 1.2.0
