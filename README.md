@@ -1,6 +1,6 @@
 # ReviewPlz
 
-[![CI Status](http://img.shields.io/travis/jongwonwoo1@gmail.com/ReviewPlz.svg?style=flat)](https://travis-ci.org/jongwonwoo1@gmail.com/ReviewPlz)
+[![CI Status](http://img.shields.io/travis/jongwonwoo/ReviewPlz.svg?style=flat)](https://travis-ci.org/jongwonwoo1@gmail.com/ReviewPlz)
 [![Version](https://img.shields.io/cocoapods/v/ReviewPlz.svg?style=flat)](http://cocoapods.org/pods/ReviewPlz)
 [![License](https://img.shields.io/cocoapods/l/ReviewPlz.svg?style=flat)](http://cocoapods.org/pods/ReviewPlz)
 [![Platform](https://img.shields.io/cocoapods/p/ReviewPlz.svg?style=flat)](http://cocoapods.org/pods/ReviewPlz)
