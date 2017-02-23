@@ -14,15 +14,16 @@ public class ReviewPlzViewController: UIViewController {
     
     @IBOutlet weak var reviewAlertView: ReviewAlertView!
     
-    public init?(withAppId appID: String) {
+    public init?(withAppId appID: String, daysLater: Int) {
         let podBundle = Bundle(for: ReviewPlzViewController.self)
         super.init(nibName: "\(ReviewPlzViewController.self)", bundle: podBundle)
         
-        if !canOpenReviewGuide() {
+        if !canOpenReviewGuide(daysLater: daysLater) {
             return nil
         }
         
         self.appID = appID
+        
         self.modalPresentationStyle = .overCurrentContext;
     }
     
@@ -49,7 +50,7 @@ public class ReviewPlzViewController: UIViewController {
 }
 
 extension ReviewPlzViewController {
-    fileprivate func canOpenReviewGuide() -> Bool {
+    fileprivate func canOpenReviewGuide(daysLater: Int) -> Bool {
         let defaults = UserDefaults.standard
         let haveReviewed = defaults.bool(forKey: haveReviewedKey)
         if haveReviewed {
@@ -57,7 +58,7 @@ extension ReviewPlzViewController {
         }
         
         if let lastDate = defaults.object(forKey: lastDateForAskingReviewKey) as? Date {
-            let theDay = lastDate.addDays(14) // TODO: days if you want
+            let theDay = lastDate.addDays(daysLater)
             let today = Date()
             if today.isLessThanDate(theDay) {
                 return false
