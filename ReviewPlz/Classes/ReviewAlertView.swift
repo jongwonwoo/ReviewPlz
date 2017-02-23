@@ -1,6 +1,5 @@
 //
-//  ReviewGuideView.swift
-//  LivePhotoPlayground
+//  ReviewAlertView.swift
 //
 //  Created by Jongwon Woo on 11/02/2017.
 //  Copyright © 2017 Jongwon Woo. All rights reserved.
@@ -8,7 +7,7 @@
 
 import UIKit
 
-class ReviewGuideAlertView: UIView {
+class ReviewAlertView: UIView {
 
     @IBOutlet weak var reviewButton: UIButton!
     @IBOutlet weak var laterButton: UIButton!

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  AppStoreReview
+//  ReviewPlz
 //
 //  Created by Jongwon Woo on 19/02/2017.
 //  Copyright © 2017 WooJongwon. All rights reserved.

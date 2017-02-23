@@ -1,6 +1,5 @@
 //
-//  ReviewController.swift
-//  LivePhotoPlayground
+//  ReviewPlzViewController.swift
 //
 //  Created by Jongwon Woo on 11/02/2017.
 //  Copyright © 2017 Jongwon Woo. All rights reserved.
@@ -8,13 +7,16 @@
 
 import UIKit
 
-public class ReviewGuideViewController: UIViewController {
+public class ReviewPlzViewController: UIViewController {
     fileprivate let haveReviewedKey = "haveReviewed"
     fileprivate let lastDateForAskingReviewKey = "lastDateForAskingReview"
     var appID: String = ""
     
+    @IBOutlet weak var reviewAlertView: ReviewAlertView!
+    
     public init?(withAppId appID: String) {
-        super.init(nibName: nil, bundle: nil)
+        let podBundle = Bundle(for: ReviewPlzViewController.self)
+        super.init(nibName: "\(ReviewPlzViewController.self)", bundle: podBundle)
         
         if !canOpenReviewGuide() {
             return nil
@@ -25,37 +27,28 @@ public class ReviewGuideViewController: UIViewController {
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     override public func viewDidLoad() {
-        self.view.backgroundColor = UIColor.clear
-        let guideView = makeView()
-        self.view.addSubview(guideView)
+        initReviewAlertView()
     }
     
-    func makeView() -> UIView {
-        let bundle = Bundle(for: self.classForCoder)
-        let view = UINib(nibName: "\(ReviewGuideAlertView.self)", bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as! ReviewGuideAlertView
-        view.frame = self.view.bounds
-        view.agreeHandler = {
+    func initReviewAlertView() {
+        self.reviewAlertView.agreeHandler = {
             self.reviewed()
             self.openAppStore()
             self.dismiss(animated: false, completion: {})
         }
         
-        view.notAgreeHandler = {
+        self.reviewAlertView.notAgreeHandler = {
             self.writeLastDateForAskingReview()
             self.dismiss(animated: false, completion: {})
         }
-        
-        return view
     }
-    
-    
 }
 
-extension ReviewGuideViewController {
+extension ReviewPlzViewController {
     fileprivate func canOpenReviewGuide() -> Bool {
         let defaults = UserDefaults.standard
         let haveReviewed = defaults.bool(forKey: haveReviewedKey)

@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03E1CC7E147248626BE5BCA4BB3DF1E4 /* ReviewPlzViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8F64F83DA4A29D7266F7D74E554B6F22 /* ReviewPlzViewController.xib */; };
 		0A9B6CA0B4AE56DCD327F41D9191545D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		1C0A45E563C857ED6346688657D3C963 /* Pods-ReviewPlz_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FA0AD28D17017C30F0F19A11842C27C /* Pods-ReviewPlz_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32B7A6210F5708AF8EB16781F7BA44AC /* Pods-ReviewPlz_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AB536D27F2E1C297A4F958C7BD6D7D /* Pods-ReviewPlz_Example-dummy.m */; };
-		3B7F68C2A2DE0BA26CC335287353483E /* ReviewPlz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37760B3AB224C3A00DF704B63CC3F2A9 /* ReviewPlz-dummy.m */; };
-		4546D86053E3735CAAEBA47736FECBF5 /* ReviewGuideAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169042B919FA4040EC456F5005096677 /* ReviewGuideAlertView.swift */; };
-		865023211EFB64FD502B7FA021CDB19A /* ReviewGuideAlertView.xib in Sources */ = {isa = PBXBuildFile; fileRef = B321AB00D01EDB79F3E79453FBB1D8CF /* ReviewGuideAlertView.xib */; };
+		3A20ED4C768A2F3C36DB4100681A68C5 /* ReviewPlzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2653E4877AFE64D04F391D00F970C1 /* ReviewPlzViewController.swift */; };
+		4E75FCD5273FC5AC94C0E18AE9D86153 /* ReviewAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A476FDD75BA360DA76A3D8EE196B35F2 /* ReviewAlertView.swift */; };
+		5D3E762E544FE625DA7BA5E640D34E2A /* ReviewPlz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37760B3AB224C3A00DF704B63CC3F2A9 /* ReviewPlz-dummy.m */; };
 		8EB46EC81438F86B2EF00D157723CB29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		AED74061387B8244005E66A7B55BD6C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		C2BC22796E761351131BB0950A7FF259 /* ReviewGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC738823BFE4293D67BE7C49058148D /* ReviewGuideViewController.swift */; };
 		CFB3758FFD125869A142BDFF2EFE8936 /* Pods-ReviewPlz_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B0A9F0EF8F4C7442A1BBED68A351AD /* Pods-ReviewPlz_Tests-dummy.m */; };
 		DD47E13ABCDF2296F3627E5E5D922404 /* Pods-ReviewPlz_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 008D8EF10FC163C667F8410818C92741 /* Pods-ReviewPlz_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EADDCF36E50F41BDE5D394C5F73E7FD6 /* ReviewPlz-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEE093F83DCD081944A5AA41073F03F /* ReviewPlz-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,7 +33,6 @@
 
 /* Begin PBXFileReference section */
 		008D8EF10FC163C667F8410818C92741 /* Pods-ReviewPlz_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReviewPlz_Example-umbrella.h"; sourceTree = "<group>"; };
-		169042B919FA4040EC456F5005096677 /* ReviewGuideAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReviewGuideAlertView.swift; sourceTree = "<group>"; };
 		1B12FDBA51C51BDDF6D1886796D99105 /* Pods-ReviewPlz_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReviewPlz_Example-resources.sh"; sourceTree = "<group>"; };
 		1F8F66D996AA6A6315888DBF5EAEDE23 /* Pods-ReviewPlz_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReviewPlz_Example-frameworks.sh"; sourceTree = "<group>"; };
 		28381605F4652F7E647829E5E934BF05 /* Pods_ReviewPlz_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReviewPlz_Tests.framework; path = "Pods-ReviewPlz_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,17 +44,17 @@
 		6FA0AD28D17017C30F0F19A11842C27C /* Pods-ReviewPlz_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReviewPlz_Tests-umbrella.h"; sourceTree = "<group>"; };
 		79FE89FAA0C33BB9CA009C1ED391B51B /* Pods-ReviewPlz_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReviewPlz_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8CA58383AF29A6806E5B9DA94D29422C /* Pods-ReviewPlz_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ReviewPlz_Tests.modulemap"; sourceTree = "<group>"; };
+		8F64F83DA4A29D7266F7D74E554B6F22 /* ReviewPlzViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ReviewPlzViewController.xib; sourceTree = "<group>"; };
 		903180B0EEC710EAA5345F637863BCBC /* Pods-ReviewPlz_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReviewPlz_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		92FFE910CF1DDB592876F4546D09BA87 /* Pods-ReviewPlz_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReviewPlz_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9713564D95CA7439573BCCA152CEFB12 /* ReviewPlz-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReviewPlz-prefix.pch"; sourceTree = "<group>"; };
 		9ECFC29FFA33A318F0AE1FD47208ACBF /* ReviewPlz.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReviewPlz.xcconfig; sourceTree = "<group>"; };
+		A476FDD75BA360DA76A3D8EE196B35F2 /* ReviewAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReviewAlertView.swift; sourceTree = "<group>"; };
 		AAF658191B7286960B529BD5780EF946 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE69FA32EFB5243478A9FF27C22DC6A8 /* Pods-ReviewPlz_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReviewPlz_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B206EEBF5535D995B8C6C518B965B936 /* Pods-ReviewPlz_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReviewPlz_Tests-resources.sh"; sourceTree = "<group>"; };
-		B321AB00D01EDB79F3E79453FBB1D8CF /* ReviewGuideAlertView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ReviewGuideAlertView.xib; sourceTree = "<group>"; };
 		BDEE093F83DCD081944A5AA41073F03F /* ReviewPlz-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReviewPlz-umbrella.h"; sourceTree = "<group>"; };
-		BFC738823BFE4293D67BE7C49058148D /* ReviewGuideViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReviewGuideViewController.swift; sourceTree = "<group>"; };
 		C4525AA555C618DDFFB1F243B1167C52 /* Pods_ReviewPlz_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReviewPlz_Example.framework; path = "Pods-ReviewPlz_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D2B0A9F0EF8F4C7442A1BBED68A351AD /* Pods-ReviewPlz_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReviewPlz_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		E1AB536D27F2E1C297A4F958C7BD6D7D /* Pods-ReviewPlz_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReviewPlz_Example-dummy.m"; sourceTree = "<group>"; };
 		F44DDC0F6F4DE59B5DD115A7CAB9A8BB /* ReviewPlz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReviewPlz.modulemap; sourceTree = "<group>"; };
 		FA11BDAD6C586F3AD2BC35F3695F2149 /* Pods-ReviewPlz_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReviewPlz_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF2653E4877AFE64D04F391D00F970C1 /* ReviewPlzViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReviewPlzViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,18 +99,18 @@
 		025FBA38648BEA2AD4AA9CE01D400A59 /* ReviewPlz */ = {
 			isa = PBXGroup;
 			children = (
-				1B70E5807AD1EB730F9F7C5243E01B21 /* Classes */,
+				22EC0CCB8A7C60DD9BE41DC058B32D2D /* Classes */,
 			);
 			name = ReviewPlz;
 			path = ReviewPlz;
 			sourceTree = "<group>";
 		};
-		1B70E5807AD1EB730F9F7C5243E01B21 /* Classes */ = {
+		22EC0CCB8A7C60DD9BE41DC058B32D2D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				169042B919FA4040EC456F5005096677 /* ReviewGuideAlertView.swift */,
-				B321AB00D01EDB79F3E79453FBB1D8CF /* ReviewGuideAlertView.xib */,
-				BFC738823BFE4293D67BE7C49058148D /* ReviewGuideViewController.swift */,
+				A476FDD75BA360DA76A3D8EE196B35F2 /* ReviewAlertView.swift */,
+				FF2653E4877AFE64D04F391D00F970C1 /* ReviewPlzViewController.swift */,
+				8F64F83DA4A29D7266F7D74E554B6F22 /* ReviewPlzViewController.xib */,
 			);
 			name = Classes;
 			path = Classes;
@@ -299,7 +299,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7CA4807EB494C761AADC1A1FE7E68F9 /* Build configuration list for PBXNativeTarget "ReviewPlz" */;
 			buildPhases = (
-				D023CE40642E4C10918FD46A4BD37332 /* Sources */,
+				835C9A224246B2ED01DCE293BF97BBF1 /* Sources */,
 				AEAA23336C74B54181757320739000DF /* Frameworks */,
 				14BE9FAEA0A90BA79B8C53788C4CF8C7 /* Headers */,
 			);
@@ -349,14 +349,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D023CE40642E4C10918FD46A4BD37332 /* Sources */ = {
+		835C9A224246B2ED01DCE293BF97BBF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4546D86053E3735CAAEBA47736FECBF5 /* ReviewGuideAlertView.swift in Sources */,
-				865023211EFB64FD502B7FA021CDB19A /* ReviewGuideAlertView.xib in Sources */,
-				C2BC22796E761351131BB0950A7FF259 /* ReviewGuideViewController.swift in Sources */,
-				3B7F68C2A2DE0BA26CC335287353483E /* ReviewPlz-dummy.m in Sources */,
+				4E75FCD5273FC5AC94C0E18AE9D86153 /* ReviewAlertView.swift in Sources */,
+				5D3E762E544FE625DA7BA5E640D34E2A /* ReviewPlz-dummy.m in Sources */,
+				3A20ED4C768A2F3C36DB4100681A68C5 /* ReviewPlzViewController.swift in Sources */,
+				03E1CC7E147248626BE5BCA4BB3DF1E4 /* ReviewPlzViewController.xib in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

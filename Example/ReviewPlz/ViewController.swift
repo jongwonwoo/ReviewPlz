@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  AppStoreReview
+//  ReviewPlz
 //
 //  Created by Jongwon Woo on 19/02/2017.
 //  Copyright © 2017 WooJongwon. All rights reserved.
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     @IBAction func touchReviewButton(_ sender: Any) {
         let appID = "1177884800" // TODO: your app ID
-        if let reviewController = ReviewGuideViewController.init(withAppId: appID) {
+        if let reviewController = ReviewPlzViewController.init(withAppId: appID) {
             self.present(reviewController, animated: false) {
             }
         }
