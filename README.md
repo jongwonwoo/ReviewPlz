@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/cocoapods/l/ReviewPlz.svg?style=flat)](http://cocoapods.org/pods/ReviewPlz)
 [![Platform](https://img.shields.io/cocoapods/p/ReviewPlz.svg?style=flat)](http://cocoapods.org/pods/ReviewPlz)
 
+![screenshot](https://github.com/jongwonwoo/ReviewPlz/blob/master/review.png)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
