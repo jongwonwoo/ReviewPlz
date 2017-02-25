@@ -11,10 +11,11 @@ public class ReviewPlzViewController: UIViewController {
     fileprivate let haveReviewedKey = "haveReviewed"
     fileprivate let lastDateForAskingReviewKey = "lastDateForAskingReview"
     var appID: String = ""
+    var appName: String = ""
     
     @IBOutlet weak var reviewAlertView: ReviewAlertView!
     
-    public init?(withAppId appID: String, daysLater: Int) {
+    public init?(withAppId appID: String, appName: String, daysLater: Int) {
         let podBundle = Bundle(for: ReviewPlzViewController.self)
         super.init(nibName: "\(ReviewPlzViewController.self)", bundle: podBundle)
         
@@ -23,6 +24,7 @@ public class ReviewPlzViewController: UIViewController {
         }
         
         self.appID = appID
+        self.appName = appName
         
         self.modalPresentationStyle = .overCurrentContext;
     }
@@ -36,6 +38,8 @@ public class ReviewPlzViewController: UIViewController {
     }
     
     func initReviewAlertView() {
+        self.reviewAlertView.appName = self.appName
+        
         self.reviewAlertView.agreeHandler = {
             self.reviewed()
             self.openAppStore()

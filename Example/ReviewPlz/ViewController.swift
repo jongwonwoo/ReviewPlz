@@ -23,9 +23,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func touchReviewButton(_ sender: Any) {
-        let appID = "1177884800" // TODO: Use your app ID
-        let daysLater = 7 // If a user touch 'No thanks' button, the view will be shown the days later.
-        if let reviewController = ReviewPlzViewController.init(withAppId: appID, daysLater: daysLater) {
+        let appID = "1177884800" // TODO: Use your app ID.
+        let appName = "ReviewPlz" // TODO: User your app name.
+        let daysLater = 7 // TODO: If a user touch 'No thanks' button, the view will be shown the days later.
+        if let reviewController = ReviewPlzViewController.init(withAppId: appID, appName: appName, daysLater: daysLater) {
             self.present(reviewController, animated: false) {
             }
         }

@@ -93,6 +93,7 @@
                         <constraint firstItem="ISA-fa-73j" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="uVK-lg-pBA"/>
                     </constraints>
                     <connections>
+                        <outlet property="appNameLabel" destination="DqG-qn-Dbi" id="rPb-jN-qPg"/>
                         <outlet property="laterButton" destination="83e-Ib-TZH" id="5BP-bg-pZ4"/>
                         <outlet property="reviewButton" destination="Lbn-DZ-8p2" id="57j-Zk-q6a"/>
                     </connections>
