@@ -27,6 +27,9 @@ class ViewController: UIViewController {
         let appName = "ReviewPlz" // TODO: User your app name.
         let daysLater = 7 // TODO: If a user touch 'No thanks' button, the view will be shown the days later.
         if let reviewController = ReviewPlzViewController.init(withAppId: appID, appName: appName, daysLater: daysLater) {
+            reviewController.feedbackCallback = { openedAppStoreReview in
+                print("\(openedAppStoreReview)")
+            }
             self.present(reviewController, animated: false) {
             }
         }

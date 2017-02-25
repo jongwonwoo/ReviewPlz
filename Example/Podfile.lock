@@ -1,5 +1,5 @@
 PODS:
-  - ReviewPlz (0.2.0)
+  - ReviewPlz (0.3.0)
 
 DEPENDENCIES:
   - ReviewPlz (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ReviewPlz: 454c6542b2cb798ca7458180ff69cbf482d561c5
+  ReviewPlz: 07aba9c434422c5cae965dc798c757827aa31f2b
 
 PODFILE CHECKSUM: 98df02b3366e77e1e8f1f2f41baf1334ddb548eb
 

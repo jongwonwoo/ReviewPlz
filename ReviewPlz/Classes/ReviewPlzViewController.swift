@@ -10,8 +10,11 @@ import UIKit
 public class ReviewPlzViewController: UIViewController {
     fileprivate let haveReviewedKey = "haveReviewed"
     fileprivate let lastDateForAskingReviewKey = "lastDateForAskingReview"
+    
     var appID: String = ""
     var appName: String = ""
+    
+    public var feedbackCallback: ((Bool) -> Swift.Void)?
     
     @IBOutlet weak var reviewAlertView: ReviewAlertView!
     
@@ -43,12 +46,20 @@ public class ReviewPlzViewController: UIViewController {
         self.reviewAlertView.agreeHandler = {
             self.reviewed()
             self.openAppStore()
-            self.dismiss(animated: false, completion: {})
+            self.dismiss(animated: false, completion: {
+                if let callback = self.feedbackCallback {
+                    callback(true)
+                }
+            })
         }
         
         self.reviewAlertView.notAgreeHandler = {
             self.writeLastDateForAskingReview()
-            self.dismiss(animated: false, completion: {})
+            self.dismiss(animated: false, completion: {
+                if let callback = self.feedbackCallback {
+                    callback(false)
+                }
+            })
         }
     }
 }
