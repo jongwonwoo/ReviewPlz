@@ -1,16 +1,16 @@
 PODS:
-  - ReviewPlz (0.3.0)
+  - ReviewPlz (0.4.0)
 
 DEPENDENCIES:
   - ReviewPlz (from `../`)
 
 EXTERNAL SOURCES:
   ReviewPlz:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  ReviewPlz: 07aba9c434422c5cae965dc798c757827aa31f2b
+  ReviewPlz: 7a25b6e77cd7cc0949313a0a33642b06a80518d2
 
 PODFILE CHECKSUM: 98df02b3366e77e1e8f1f2f41baf1334ddb548eb
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.6.1

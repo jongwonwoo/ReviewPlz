@@ -86,7 +86,7 @@ extension ReviewPlzViewController {
     fileprivate func openAppStore() {
         func open(url: URL) {
             if #available(iOS 10, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: { (success) in
                     print("Open \(url): \(success)")
                 })
             } else {
@@ -127,4 +127,9 @@ extension Date {
         let dateWithDaysAdded = self.addingTimeInterval(secondsInDays)
         return dateWithDaysAdded
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }
