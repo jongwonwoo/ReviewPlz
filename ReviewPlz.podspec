@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReviewPlz'
-  s.version          = '0.5.0'
+  s.version          = '0.5.1'
   s.summary          = 'ReviewPlz helps you get App Reviews'
 
 # This description is used to generate tags and improve search results.
